@@ -6,8 +6,8 @@ jobs:
       fail-fast: false
       matrix:
         # Due to https://github.com/actions/runner/issues/849, we have to use quotes for '3.0'
-        ruby: ['3.3']
-        rails: ['7.0']
+        ruby: ['3.0', '3.3']
+        rails: ['6.1', '7.0']
         mongodb-version: ['4.4']
         exclude:
           - ruby: '3.0'
